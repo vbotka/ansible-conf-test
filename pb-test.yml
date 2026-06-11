@@ -1,0 +1,11 @@
+---
+- name: ansible-test
+  hosts: localhost.my.domain
+
+  tasks:
+
+    - name: Hello world!
+      ansible.builtin.copy:
+        dest: /tmp/ansible-hello-world.txt
+        content: |
+          [ansible-test] Hello world!
